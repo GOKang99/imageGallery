@@ -11,6 +11,7 @@
 h1 {
   text-align: center;
   margin-top: 50px;
+  font-size: 100px;
 }
 /* 이미지 갤러리 스타일링 */
 .gallery {
@@ -24,7 +25,7 @@ h1 {
   max-width: 85%;
   margin: 40px 0;
   /* 이미지들을 3줄 각 310px로 설정 */
-  columns: 3 600px;
+  columns: 2 600px;
   list-style: none;
 }
 
@@ -35,10 +36,13 @@ h1 {
   position: relative;
   margin-bottom: 14px;
   border-radius: 4px;
+  width: 100%;
+  height: auto;
 }
 
 .gallery .images img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   transition: transform 0.2s ease;
 }
 
